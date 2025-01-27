@@ -1,4 +1,4 @@
-package com.nextwatch.nextwatch;
+package com.nextwatch.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
