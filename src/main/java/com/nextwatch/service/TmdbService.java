@@ -26,7 +26,7 @@ public class TmdbService {
         return restTemplate.getForObject(url, String.class);
     }
 
-    public static String getSearchResults(String searchQuery){
+    public String getSearchResults(String searchQuery){
         String url = BASE_URL + "search/multi?api_key=" + apiKey + "&query=" + searchQuery;
         RestTemplate restTemplate = new RestTemplate();
         try {
@@ -39,7 +39,7 @@ public class TmdbService {
         }
     }
 
-    public static String getSpecificSearchResults(String searchQuery, String specific){
+    public String getSpecificSearchResults(String searchQuery, String specific){
         String url = BASE_URL + "search/" + specific + "?api_key="+ apiKey + "&query" + searchQuery;
         RestTemplate restTemplate = new RestTemplate();
         try {
